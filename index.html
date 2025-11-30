@@ -23,9 +23,12 @@
                   Harsha Mupparaju
                 </p>
                 <p>
-		I'm a CS master's student at <a href="https://www.nyu.edu/">New York University</a>, where I work with <a href="https://engineering.nyu.edu/faculty/qi-sun">Qi Sun</a>.
-		Previously I've worked at <a href="https://iisc.ac.in/">Indian Institute of Science</a> with <a href="https://ece.iisc.ac.in/~rajivs/#/">Rajiv Soundararajan</a> where I've worked on Sparse Input Novel View Synthesis.
-		I did my Bachelor's in Electronics and Instrumentation with a minor in Data Science at Birla Institute of Technology, Goa, India.
+		              I'm a CS master's student at <a href="https://www.nyu.edu/">New York University</a>, where I work on perceptually guided VR rendering and neural scene reconstruction with <a href="https://engineering.nyu.edu/faculty/qi-sun">Prof. Qi Sun</a>.
+		              Previously I've worked at <a href="https://iisc.ac.in/">Indian Institute of Science</a> with <a href="https://ece.iisc.ac.in/~rajivs/#/">Prof. Rajiv Soundararajan</a> where I've worked on Sparse Input Novel View Synthesis.
+		              I completed my Bachelor's in Electronics and Instrumentation with a minor in Data Science at <a href="https://www.bits-pilani.ac.in/goa/">Birla Institute of Technology</a>, Goa, India.
+                </p>
+                <p>
+                  I have previously interned at <a href="https://www.dwellci.com/">Dwellci AI</a> and <a href="https://research.samsung.com/sri-b">Samsung R&D</a>, Bangalore, India.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:harshamupparaju2023@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -45,7 +48,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer graphics, computer vision, perception and machine learning. In particular, I'm interested in 3D/4D reconstruction and generation.  
+                  I'm interested in computer graphics, computer vision, perception and machine learning. In particular, I'm interested in 3D/4D reconstruction. Lately I have been intrigued by world models and generative models.
                   <!-- Some papers are <span class="highlight">highlighted</span>. -->
                 </p>
               </td>
@@ -55,14 +58,10 @@
 
 
     <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+      <td style="padding:16px;width:30%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='perceptual_image'><video  width=100% height=100% muted autoplay loop>
-          <!-- <source src="images/bolt3d.mp4" type="video/mp4"> -->
-          Your browser does not support the video tag.
 
-          </video></div>
-          <img src='images/perceptual_gaussians_cyberpunk-room-1_image-551_gaze-1_level-3.jpg' width="160">
+          <img src='images/perceptual_gaussians_cyberpunk-room-1_image-551_gaze-1_level-3.jpg', width="300">
         </div>
         <!-- <script type="text/javascript">
           function bolt3d_start() {
@@ -75,7 +74,7 @@
           bolt3d_stop()
         </script> -->
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
+      <td style="padding:8px;width:70%;vertical-align:middle">
         <a href="">
           <span class="papertitle">Perceptually Guided 3DGS Streaming and Rendering for Virtual Reality</span>
         </a>
@@ -102,9 +101,9 @@
     </tr>
 
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+      <td style="padding:16px;width:30%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
+          <div class="two" id='simplerf_image'>
 					  <img src='images/simplerf_zipnerf_bonsai.png' width=100%>
 					</div>
           <img src='images/simplerf_simplezipnerf_bonsai.png' width=100%>
@@ -115,17 +114,25 @@
           </video></div> -->
         <script type="text/javascript">
           function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+            document.getElementById('simplerf_image').style.opacity = "1";
           }
 
           function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+            document.getElementById('simplerf_image').style.opacity = "0";
           }
           ever_stop()
         </script>
+        <script>
+          let visible = false;
+          setInterval(() => {
+            const el = document.getElementById('simplerf_image');
+            visible = !visible;
+            el.style.opacity = visible ? "1" : "0";
+          }, 1200);  // switch every 1.2 seconds (adjust as you like)
+        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://half-potato.gitlab.io/posts/ever/">
+      <td style="padding:8px;width:70%;vertical-align:middle">
+        <a href="https://nagabhushansn95.github.io/publications/2024/Simple-RF.html">
 			<span class="papertitle">Simple-RF: Regularizing Sparse Input Radiance Fields with Simpler Solutions
 </span>
         </a>
@@ -149,7 +156,7 @@
 
 
     <tr  >
-      <td style="padding:16px;width:20%;vertical-align:middle">
+      <td style="padding:16px;width:45%;vertical-align:middle">
         <div class="one">
           <div class="two" id='rf_Derf_image'><video  width=110% height=100% muted autoplay loop>
           <source src="images/rf_derf_Kplanes_vs_RFDeRF_N3DV_cook_spinach_spiral.mp4" type="video/mp4">
@@ -167,8 +174,8 @@
           } -->
         </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://cat-4d.github.io/">
+      <td style="padding:8px;width:20%;vertical-align:middle">
+        <a href="https://nagabhushansn95.github.io/publications/2024/RF-DeRF.html">
 			<span class="papertitle">Factorized motion fields for fast sparse input dynamic view synthesis
 </span>
         </a>
@@ -185,7 +192,7 @@
         <a href="https://arxiv.org/abs/2404.11669">arXiv</a>
         <p></p>
         <p>
-				An approach to Generate a 4D radiance field from a video in the sparse-viewpoint senario using reliable flow priors.
+				An approach to Generate a 4D radiance field from a video in the sparse-viewpoint senario using reliable flow priors. Video on the left is K-Planes, video on the right is ours.
         </p>
       </td>
     </tr>
@@ -194,6 +201,18 @@
 
             
           </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Beyond Research</h2>
+                <p>
+                  In my free time, I like playing volleyball 🏐, hitting the gym, or going for a run. I also love exploring NYC 🍎 in all its chaos, and unwinding with some gaming 🎮 - which usually just adds more stress xD. I'm always open for discussing relevant research , feel free to reach out through <a href="mailto:harshamupparaju@nyu.edu">email</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
